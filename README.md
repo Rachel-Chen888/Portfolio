@@ -1,5 +1,7 @@
 # Portfolio Landing Page
 
+need to run "npm install" to get the node_modules with react-bootstrap
+
 
 <!-- From installation: 
 

@@ -26,7 +26,20 @@ export default function App() {
                 alt="Rachel Luo Headshot" 
               />
             
+            <div className="aboutText">
               <p>Welcome to my portfolio! Here you can find information about my projects, skills, and experience.</p> 
+                <h2>Skills</h2>
+          <ul>
+            <li>Programming Languages: Java, Python, JavaScript, HTML/CSS, TBC </li>
+            <li>Frameworks: React</li>
+            <li>Tools: Git, Fabric</li>
+          </ul>
+
+           <h2>Experience</h2>
+        <p>I have experience working as a data engineer at the Department of National Defence, where I contributed to various projects and collaborated with clients.</p>
+      
+          </div>
+            
             </div>
         </section>
 
@@ -69,38 +82,40 @@ export default function App() {
 
     <ProjectCard
       image={RachelPic}
-      title="Portfolio Website"
-      description="A responsive portfolio website built using React and Bootstrap."
+      title="Service Site"
+      description="A service site for a dental clinic built using React and Bootstrap."
       link="https://github.com/"
     />
 
     <ProjectCard
       image={RachelPic}
-      title="Housing Finder"
-      description="A rental platform project with AI-assisted search functionality."
+      title="Memory Game"
+      description="A card and cat memory game built using React and Bootstrap."
       link="https://github.com/"
     />
 
+    <ProjectCard
+      image={RachelPic}
+      title="E-Commerce Site"
+      description="An e-commerce platform that sells pokemon figures built using React and Bootstrap."
+      link="https://github.com/"
+    />
+
+    <ProjectCard
+      image={RachelPic}
+      title="Analytics Site"
+      description="An analytics dashboard gathering weekly transaction data from the Pokemon site using React and Bootstrap."
+      link="https://github.com/"
+    />
+    
   </div>
  
-        <ul>
-            <li><a href="service.html">Project 1: Service Site</a></li>
-            <li><a href="game.html">Project 2: Memory Game</a></li>
-            <li><a href="ecommerce.html">Project 3: E-Commerce Site</a></li>
-            <li><a href="analytics.html">Project 4: Bilingual Analytics Site</a></li>
-        </ul>
-        </section>
+       
+  </section>
         
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: Java, Python, JavaScript, HTML/CSS, TBC </li>
-            <li>Frameworks: React</li>
-            <li>Tools: Git, Fabric</li>
-        </ul>
+      
         
-        <h2>Experience</h2>
-        <p>I have experience working as a data engineer at the Department of National Defence, where I contributed to various projects and collaborated with clients.</p>
-      </main>
+       </main>
     </>
   )
 }
