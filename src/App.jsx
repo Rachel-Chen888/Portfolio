@@ -1,46 +1,27 @@
 
 import './App.css'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container'; 
+import CustomNavbar from './components/CustomNavbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import RachelPic from './assets/RachelPic.png'
 import logo from './assets/logo.png'
+import Carousel from 'react-bootstrap/Carousel';
+import ProjectCard from './components/ProjectCard';
 
 export default function App() {
 
   return (
     <>
-    
-      <Navbar expand="lg" className="customNavbar" fixed="top">
-      <Container>
-        <Navbar.Brand href="#about"> 
-          <img
-            src={logo}
-            width="50"
-            height="50"
-            className="d-inline-block align-top"
-            alt="Rachel Luo Logo" 
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="w-100 justify-content-evenly">
-            <Nav.Link href="#workflow">Workflow</Nav.Link>
-            <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact Me</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+
+      <CustomNavbar />
       <main className="mainContent">
-        <section id="home">
-            <h1 className="portfolioTitle">Hi I'm Rachel Luo</h1>
-            <div className="d-flex align-items-center gap-4">
+        <section id="about">
+            <h1 className="portfolioTitle">Hi I'm <span className="Rachel">Rachel Luo</span></h1>
+            <div className="d-flex align-items-center gap-5">
               <img
                 src={RachelPic}  
-                width="330"
-                height="330"
+                width="400"
+                height="400"
                 className="d-inline-block align-top"
                 alt="Rachel Luo Headshot" 
               />
@@ -48,13 +29,67 @@ export default function App() {
               <p>Welcome to my portfolio! Here you can find information about my projects, skills, and experience.</p> 
             </div>
         </section>
-        <h2>Projects</h2>
+
+
+
+        <section id="workflow">
+          <h1 className="workflowTitle">Workflow</h1>
+
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={RachelPic}
+                alt="First slide"
+              />
+              <Carousel.Caption>
+                <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={RachelPic}
+                alt="Second slide"
+              />
+              <Carousel.Caption>
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </section>
+
+        <section id="projects">
+        <h1>Projects</h1>  
+
+  <div className="projectsContainer">
+
+    <ProjectCard
+      image={RachelPic}
+      title="Portfolio Website"
+      description="A responsive portfolio website built using React and Bootstrap."
+      link="https://github.com/"
+    />
+
+    <ProjectCard
+      image={RachelPic}
+      title="Housing Finder"
+      description="A rental platform project with AI-assisted search functionality."
+      link="https://github.com/"
+    />
+
+  </div>
+ 
         <ul>
             <li><a href="service.html">Project 1: Service Site</a></li>
             <li><a href="game.html">Project 2: Memory Game</a></li>
             <li><a href="ecommerce.html">Project 3: E-Commerce Site</a></li>
             <li><a href="analytics.html">Project 4: Bilingual Analytics Site</a></li>
         </ul>
+        </section>
         
         <h2>Skills</h2>
         <ul>

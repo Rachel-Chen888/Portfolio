@@ -1,12 +1,32 @@
 .mainContent {
-  padding-top: 100px; 
   margin: 10px;
   background-color: #ffffff;
+}
+
+#about{  
+  scroll-margin-top: 100px;
+  margin: 100px 10px;
+  border-radius: 20px;
+  display: flex; 
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
 }
 .portfolioTitle {
   text-align: left;
   color: #333;
   margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 60px;
+}
+
+.Rachel {
+  color: #e7a9a9;
+  font-weight: 600; 
 }
 
 .customNavbar {
@@ -30,4 +50,22 @@
     background-color: #e7a9a9;
     border-color: #c97f7f;
     color: white;
+}
+
+#workflow {
+  
+  scroll-margin-top: 100px;
+  margin: 100px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+.carouselImage {
+  height: 400px;
+  object-fit: cover;
 }
