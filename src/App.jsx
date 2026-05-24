@@ -4,9 +4,14 @@ import Container from 'react-bootstrap/Container';
 import CustomNavbar from './components/CustomNavbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import RachelPic from './assets/RachelPic.png'
+import hotpink from './assets/hotpink.png'
+import purple from './assets/purple.jpg'
+import blue from './assets/blue.png'
+import coolpurple from './assets/coolpurple.png'
 import logo from './assets/logo.png'
 import Carousel from 'react-bootstrap/Carousel';
 import ProjectCard from './components/ProjectCard';
+import Footer from './components/Footer'
 
 export default function App() {
 
@@ -81,28 +86,28 @@ export default function App() {
   <div className="projectsContainer">
 
     <ProjectCard
-      image={RachelPic}
+      image={blue}
       title="Service Site"
       description="A service site for a dental clinic built using React and Bootstrap."
-      link="https://github.com/"
+      link={"https://github.com/"}
     />
 
     <ProjectCard
-      image={RachelPic}
+      image={coolpurple}
       title="Memory Game"
       description="A card and cat memory game built using React and Bootstrap."
       link="https://github.com/"
     />
 
     <ProjectCard
-      image={RachelPic}
+      image={purple}
       title="E-Commerce Site"
       description="An e-commerce platform that sells pokemon figures built using React and Bootstrap."
       link="https://github.com/"
     />
 
     <ProjectCard
-      image={RachelPic}
+      image={hotpink}
       title="Analytics Site"
       description="An analytics dashboard gathering weekly transaction data from the Pokemon site using React and Bootstrap."
       link="https://github.com/"
@@ -114,6 +119,9 @@ export default function App() {
   </section>
         
       
+        <section id="contact" className="footer">
+          <Footer />
+        </section>
         
        </main>
     </>
