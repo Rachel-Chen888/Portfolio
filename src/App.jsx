@@ -1,5 +1,8 @@
 
 import './App.css'
+import Button from 'react-bootstrap/Button'
+
+
 
 export default function App() {
 
@@ -9,7 +12,12 @@ export default function App() {
         
         <h1 className="portfolioTitle">Rachel Luo Portfolio</h1>
         <p>Welcome to my portfolio! Here you can find information about my projects, skills, and experience.</p>
-        
+        <button className="btn btn-success">
+          Test Button
+        </button>
+        <Button variant="success">
+          Click Me
+        </Button>
         <h2>Projects</h2>
         <ul>
             <li><a href="service.html">Project 1: Service Site</a></li>
