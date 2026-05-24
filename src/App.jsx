@@ -10,6 +10,13 @@ import blue from './assets/blue.png'
 import coolpurple from './assets/coolpurple.png'
 import logo from './assets/logo.png'
 import Carousel from 'react-bootstrap/Carousel';
+import deploy from './assets/deploy.jpg'
+import dev from './assets/dev.jpg'
+import research from './assets/research.jpg'
+import testing from './assets/testing.jpg'
+import typography from './assets/typography.jpg'
+import wireframe from './assets/wireframe.jpg' 
+import colours from './assets/colours.jpg'
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer'
 
@@ -53,30 +60,92 @@ export default function App() {
         <section id="workflow">
           <h1 className="workflowTitle">Workflow</h1>
 
-          <Carousel>
+          <Carousel className="workflowCarousel">
             <Carousel.Item>
               <img
                 className="d-block w-100 carouselImage"
-                src={RachelPic}
-                alt="First slide"
+                src={research}
+                alt="Workflow 1: Research and get inspiration"
               />
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>1. Research</h3>
+                <p>Look at various sources and research context to get inspiration for my own project</p>
               </Carousel.Caption>
             </Carousel.Item>
 
             <Carousel.Item>
               <img
                 className="d-block w-100 carouselImage"
-                src={RachelPic}
-                alt="Second slide"
+                src={wireframe}
+                alt="Workflow 2: Create a wireframe to get the foundation and strcuture of the project"
               />
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>2. Wireframing</h3>
+                <p>Create a wireframe to get the foundation and structure of the project</p>
               </Carousel.Caption>
             </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={colours}
+                alt="Workflow 3: Select the correct colour palette to create the right mood and vibe for the project"
+              />
+              <Carousel.Caption>
+                <h3>3. Colour Selection</h3>
+                <p>Select the correct colour palette to create the right mood and vibe for the project</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={typography}
+                alt="Workflow 4: Select fonts that fit the project and are easy to read"
+              />
+              <Carousel.Caption>
+                <h3>4. Typography</h3>
+                <p>Select fonts that fit the project and are easy to read</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={dev}
+                alt="Workflow 5: Use React, bootstrap, HTML/CSS, and JavaScript to build the project and make it interactive"
+              />
+              <Carousel.Caption>
+                <h3>5. Development</h3>
+                <p>Use React, bootstrap, HTML/CSS, and JavaScript to build the project and make it interactive</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={testing}
+                alt="Workflow 6: Test the project and make it accessible to all users"
+              />
+              <Carousel.Caption>
+                <h3>6. Testing</h3>
+                <p>Test the project, fix any issues, and incorporate accessibility features</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            <Carousel.Item>
+              <img
+                className="d-block w-100 carouselImage"
+                src={deploy}
+                alt="Workflow 7: Deploy the project and share it with the world"
+              />
+              <Carousel.Caption>
+                <h3>7. Deployment</h3>
+                <p>Deploy the project and share it with the world</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+
           </Carousel>
         </section>
 
