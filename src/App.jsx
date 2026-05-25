@@ -43,7 +43,7 @@ export default function App() {
               alt="Rachel Luo Headshot" 
             />
           
-            <div className="aboutText">
+            <div className="aboutText"> 
               <p>I am a third year <span className="highlight"> computer science</span> student at UOttawa with experience in <span className="highlight">data engineering </span> at the Department of National Defence. I am currently learning <span className="highlight">UI/UX Design</span> and applying it to various projects shown below.</p> 
               
               <h3>Skills</h3>

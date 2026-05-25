@@ -47,18 +47,21 @@ h1 {
   scroll-margin-top: 100px;
   margin: 100px 10px;
   border-radius: 20px;
-  padding: 20px 50px;
+  padding: 20px 100px;
   display: flex; 
   flex-direction: column;
 
   align-items: center;
   justify-content: center;
 
-  text-align: center;
+  text-align: left;
   font-family: "Arial", sans-serif;
 
 }
 
+.aboutText{
+  padding: 30px 70px;
+}
 .portfolioTitle {
   text-align: left;
   color: #333;
