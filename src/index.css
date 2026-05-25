@@ -37,7 +37,7 @@ span {
   scroll-margin-top: 100px;
   margin: 100px 10px;
   border-radius: 20px;
-  padding: 0px 50px;
+  padding: 20px 50px;
   display: flex; 
   flex-direction: column;
 
