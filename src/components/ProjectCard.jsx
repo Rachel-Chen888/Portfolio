@@ -13,14 +13,8 @@ function ProjectCard({ image, title, description, link }) {
       />
 
       <Card.Body>
-
-        <Card.Title>
-          {title}
-        </Card.Title>
-
-        <Card.Text>
-          {description}
-        </Card.Text>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text>{description}</Card.Text>
 
         <Button
           variant="primary"
@@ -29,7 +23,6 @@ function ProjectCard({ image, title, description, link }) {
         >
           View Project
         </Button>
-
       </Card.Body>
 
     </Card>

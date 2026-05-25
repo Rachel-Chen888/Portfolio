@@ -2,10 +2,36 @@ span {
   display: block;
 }
 
+
 .mainContent {
   margin: 10px;
   background-color: #ffffff;
 }
+
+
+.customNavbar {
+  background-color: rgba(137, 105, 159, 0.5); 
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  /* border-radius: 20px;  */
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+ 
+.customNavbar .nav-link {
+    color: #333;
+    margin: 0 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.customNavbar .nav-link:hover {
+    background-color: #e7a9a9;
+    border-color: #c97f7f;
+    color: white;
+}
+
 
 #about{  
   scroll-margin-top: 100px;
@@ -21,6 +47,7 @@ span {
   text-align: center;
 
 }
+
 .portfolioTitle {
   text-align: left;
   color: #333;
@@ -34,6 +61,7 @@ span {
   font-weight: 600; 
   display: inline-block;
 }
+
 .Rachel:hover {
   transform: translateX(10px); 
   text-shadow: 0 0 10px rgba(228, 163, 163, 0.8);
@@ -45,9 +73,22 @@ span {
   font-weight: 600; 
   display: inline-block;
 }
+
 .highlight:hover {
   transform: translateY(-1px); 
   text-shadow: 0 0 10px rgba(228, 163, 163, 0.8); 
+}
+
+
+#workflow {
+  scroll-margin-top: 100px;
+  margin: 100px 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .workflowLink {
@@ -64,44 +105,7 @@ span {
   text-shadow: 0 0 10px rgba(228, 163, 163, 0.8); 
 }
 
-.customNavbar {
-  background-color: rgba(137, 105, 159, 0.5); 
-  backdrop-filter: blur(10px);
-  padding: 20px 30px;
-  /* border-radius: 20px;  */
-  font-family: 'Arial', sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-}
- 
-
-.customNavbar .nav-link {
-    color: #333;
-    margin: 0 15px;
-    border-radius: 30px;
-    transition: all 0.3s ease;
-}
-
-.customNavbar .nav-link:hover {
-    background-color: #e7a9a9;
-    border-color: #c97f7f;
-    color: white;
-}
-
-#workflow {
-  scroll-margin-top: 100px;
-  margin: 100px 10px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column; 
-
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
 .carouselImage {
-  
   height: 400px;
   object-fit: cover;
 }
@@ -114,24 +118,12 @@ span {
   text-shadow: none;
 }
 
-/* ONLY invert the arrows */
 .workflowCarousel .carousel-control-prev-icon,
 .workflowCarousel .carousel-control-next-icon {
   filter: invert(1);
 }
 
-/* Bottom dots */
 .workflowCarousel .carousel-indicators [data-bs-target] {
   background-color: black;
 }
 
-#projects {
-  scroll-margin-top: 100px;
-  margin: 100px 10px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
