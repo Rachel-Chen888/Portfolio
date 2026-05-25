@@ -20,8 +20,9 @@ import colours from './assets/colours.jpg'
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer'
 
-export default function App() {
 
+export default function App() {
+  
   return (
     <>
 
@@ -32,23 +33,21 @@ export default function App() {
             <div className="d-flex align-items-center gap-5">
               <img
                 src={RachelPic}  
-                width="400"
+                width="600"
                 height="400"
                 className="d-inline-block align-top"
                 alt="Rachel Luo Headshot" 
               />
             
             <div className="aboutText">
-              <p>Welcome to my portfolio! Here you can find information about my projects, skills, and experience.</p> 
-                <h2>Skills</h2>
-          <ul>
-            <li>Programming Languages: Java, Python, JavaScript, HTML/CSS, TBC </li>
-            <li>Frameworks: React</li>
-            <li>Tools: Git, Fabric</li>
-          </ul>
-
-           <h2>Experience</h2>
-        <p>I have experience working as a data engineer at the Department of National Defence, where I contributed to various projects and collaborated with clients.</p>
+              <p>I am a third year <span className="highlight"> computer science</span> student at UOttawa with experience in <span className="highlight">data engineering </span> at the Department of National Defence. I am currently learning <span className="highlight">UI/UX Design</span> and applying it to various projects shown below.</p> 
+                <h3>Skills</h3>
+            <span>Languages: Java, Python, JavaScript, HTML/CSS</span>
+            <span>Frameworks: React</span>
+            <span>Tools: Git, Fabric, Figma, Power BI</span> 
+            <br/>  
+            <h3>Interests</h3>
+            <p>I love designing websites and creating engaging user experiences.</p>
       
           </div>
             
@@ -59,7 +58,16 @@ export default function App() {
 
         <section id="workflow">
           <h1 className="workflowTitle">Workflow</h1>
-
+          <p>I am currently taking a UI/UX course to improve my design skills. As for now, I have adopted my workflow through the various articles I have read.</p>
+          <p>
+        Useful Resources: 
+        <a
+            href="https://www.nngroup.com/articles/principles-visual-design/"
+            className="workflowLink" 
+        >
+            Principles of Visual Design by NN/G
+        </a>
+        </p> 
           <Carousel className="workflowCarousel">
             <Carousel.Item>
               <img
@@ -153,33 +161,33 @@ export default function App() {
         <h1>Projects</h1>  
 
   <div className="projectsContainer">
-
+    
     <ProjectCard
       image={blue}
       title="Service Site"
       description="A service site for a dental clinic built using React and Bootstrap."
-      link={"https://github.com/"}
+      link={"/comingsoon.html"}
     />
 
     <ProjectCard
       image={coolpurple}
       title="Memory Game"
       description="A card and cat memory game built using React and Bootstrap."
-      link="https://github.com/"
+      link={"/comingsoon.html"}
     />
 
     <ProjectCard
       image={purple}
       title="E-Commerce Site"
       description="An e-commerce platform that sells pokemon figures built using React and Bootstrap."
-      link="https://github.com/"
+      link={"/comingsoon.html"}
     />
 
     <ProjectCard
       image={hotpink}
       title="Analytics Site"
-      description="An analytics dashboard gathering weekly transaction data from the Pokemon site using React and Bootstrap."
-      link="https://github.com/"
+      description="An analytics dashboard for Pokemon transactions using React and Bootstrap."
+      link={"/comingsoon.html"}
     />
     
   </div>
@@ -189,7 +197,7 @@ export default function App() {
         
       
         <section id="contact" className="footer">
-          <Footer />
+          <Footer/>
         </section>
         
        </main>

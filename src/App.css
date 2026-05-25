@@ -23,156 +23,41 @@
   object-fit: cover;
 }
 
-
 .footer {
-  margin-top: 50px;
-  padding: 50px 20px;
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(
-    135deg,
-    rgba(137, 105, 159, 0.5),
-    rgba(137, 105, 159, 0.5),
-    rgba(137, 105, 159, 0.5)
-  );
-  background-size: 300% 300%;
-  animation:
-    gradientMove 10s ease infinite,
-    fadeUp 1.2s ease;
+  /* margin-top: 50px; */
+  padding: 30px 10px;
+  background: rgb(114, 91, 130);
+  backdrop-filter: blur(10px);
   color: white;
   text-align: center;
 }
 
-/* Floating glowing background effect */
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: rgba(137, 105, 159, 0.5);
-  border-radius: 50%;
-  top: -200px;
-  left: -100px;
-  filter: blur(80px);
-  animation: pulseGlow 8s ease-in-out infinite;
-}
-
-.footerContent {
-  position: relative;
-  z-index: 2;
+.footerContent { 
   max-width: 700px;
   margin: 0 auto;
-  animation: floatFooter 4s ease-in-out infinite;
+  background: transparent;
+  padding: 0;
 }
 
-/* Main Name */
 .footer h3 {
   font-size: 42px;
   margin-bottom: 25px;
   letter-spacing: 2px;
-  animation: textGlow 3s ease-in-out infinite;
 }
 
-/* Footer Text */
 .footer p {
   margin: 10px 0;
   font-size: 18px;
-  transition: transform 0.3s ease;
 }
 
-/* Hover movement */
-.footer p:hover {
-  transform: translateX(10px);
-  color: #ffeaea;
-}
-
-/* Copyright */
 .copyright {
   margin-top: 30px;
   font-size: 14px;
   opacity: 0.85;
 }
 
-
-/* Animations  */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes floatFooter {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-/* Animated gradient */
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Glowing clock */
-@keyframes pulseGlow {
-  0% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-
-  50% {
-    transform: scale(1.2);
-    opacity: 0.8;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
-  }
-}
-
-/* Name glow */
-@keyframes textGlow {
-
-  0% {
-    text-shadow: 0 0 10px rgba(255,255,255,0.3);
-  }
-
-  50% {
-    text-shadow:
-      0 0 20px rgba(255,255,255,0.8),
-      0 0 40px rgba(255,255,255,0.5);
-  }
-
-  100% {
-    text-shadow: 0 0 10px rgba(255,255,255,0.3);
-  }
-}
-
 .footerLink {
+  display: inline-block;
   color: white;
   text-decoration: none;
   margin-left: 8px;
@@ -180,15 +65,14 @@
 }
 
 .footerLink:hover {
+  transform: translateX(10px);
   color: #ffeaea;
   text-shadow: 0 0 10px rgba(255,255,255,0.8);
   letter-spacing: 1px;
 }
 
-
 .clockText {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
-  animation: textGlow 3s ease-in-out infinite;
 }

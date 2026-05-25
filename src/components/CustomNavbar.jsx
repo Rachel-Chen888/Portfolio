@@ -7,8 +7,14 @@ import logo from '../assets/logo.png';
 function CustomNavbar() {
 
   return (
+
       <Navbar expand="lg" className="customNavbar" fixed="top">
       <Container>
+         <Navbar.Collapse
+      id="basic-navbar-nav"
+      className="justify-content-center"
+    >
+        <Nav className="align-items-center gap-5">
         <Navbar.Brand href="#about"> 
           <img
             src={logo}
@@ -18,12 +24,10 @@ function CustomNavbar() {
             alt="Rachel Luo Logo" 
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="w-100 justify-content-evenly">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" /> 
             <Nav.Link href="#workflow">Workflow</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
-            <Nav.Link href="#contact">Contact Me</Nav.Link>
+            <Nav.Link href="#contact">Contact Me</Nav.Link> 
           </Nav>
         </Navbar.Collapse>
       </Container>
