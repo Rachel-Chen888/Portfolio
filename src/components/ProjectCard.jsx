@@ -20,6 +20,7 @@ function ProjectCard({ image, title, description, link }) {
           variant="primary"
           href={link}
           target="_blank"
+          className="projectButton"
         >
           View Project
         </Button>

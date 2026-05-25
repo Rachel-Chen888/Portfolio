@@ -9,6 +9,11 @@
   text-align: center;
 }
 
+.projectButton { 
+  background-color: #dc8787 !important; 
+  transition: all 0.3s ease;
+}
+
 .projectsContainer {
   display: flex;
   gap: 40px;
@@ -38,9 +43,9 @@
 .footer {
   /* margin-top: 50px; */
   padding: 30px 10px;
-  background: rgb(114, 91, 130);
+  background: rgb(169, 144, 185);
   backdrop-filter: blur(10px);
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -70,15 +75,15 @@
 
 .footerLink {
   display: inline-block;
-  color: white;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
   margin-left: 8px;
   transition: all 0.3s ease;
 }
 
 .footerLink:hover {
   transform: translateX(10px);
-  color: #ffeaea;
+  color: black;
   text-shadow: 0 0 10px rgba(255,255,255,0.8);
   letter-spacing: 1px;
 }
