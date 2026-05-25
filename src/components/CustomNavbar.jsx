@@ -10,6 +10,7 @@ function CustomNavbar() {
 
       <Navbar expand="lg" className="customNavbar" fixed="top">
       <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
          <Navbar.Collapse
       id="basic-navbar-nav"
       className="justify-content-center"
